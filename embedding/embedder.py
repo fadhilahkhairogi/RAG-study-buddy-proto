@@ -5,7 +5,7 @@ class Embedder:
     def __init__(self):
         device = "cuda" if torch.cuda.is_available() else "cpu"
         self.model = SentenceTransformer(
-            "intfloat/e5-base-v2",
+            "intfloat/multilingual-e5-large",
             device=device
         )
 
